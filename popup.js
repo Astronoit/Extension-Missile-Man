@@ -2,7 +2,7 @@
 
 function hello() {
   chrome.tabs.executeScript({
-    file: 'alert.js'
+    file: 'index.html'
   }); 
 }
 

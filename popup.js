@@ -1,9 +1,4 @@
-// var app = chrome.runtime.getBackgroundPage();
-
-function hello() {
-  chrome.tabs.executeScript({
-    file: 'index.html'
-  }); 
-}
-
-document.getElementById('clickme').addEventListener('click', hello);
+chrome.browserAction.onClicked.addListener(function() {
+   chrome.windows.create({'url': 'index.html', 'type': 'popup'}, function(window) {
+   });
+});

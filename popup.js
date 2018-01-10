@@ -1,9 +1,9 @@
-// popup.js
+// var app = chrome.runtime.getBackgroundPage();
 
-function runSwitchjs() {
+function hello() {
   chrome.tabs.executeScript({
-    file: 'switch.js'
-  });
+    file: 'alert.js'
+  }); 
 }
 
-document.getElementById('clickme').addEventListener('click', runSwitchjs);
+document.getElementById('clickme').addEventListener('click', hello);
